@@ -55,7 +55,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let user = global.db.data.users[who]
 
   let infobt = `
-≡ *INFO BOT*
+ *INFO BOT*
   
 *STATE*
 ▢ *${groupsIn.length}* GROUP CHATS
@@ -64,32 +64,10 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ▢ *${chats.length - groupsIn.length}* private chats
 ▢ *${chats.length}* Total Chats
 
-*≡ OWNER*
-  *GURU*
-▢ Instagram :
-  • https://instagram.com/asli_guru69
-▢ GitHub :
-  • https://github.com/Guru322
-▢ Telegram : 
-  • t.me/i_want_to_be_isekaied (GURU) 
-▢ YouTube : 
-  • https://youtube.com/@Asliguru
-
- *≡ S E R V E R*
-*🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*🔵 FreeRAM:* ${format(freemem())}
-
-*≡  NodeJS memory *
-${
-  '```' +
-  Object.keys(used)
-    .map(
-      (key, _, arr) =>
-        `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`
-    )
-    .join('\n') +
-  '```'
-}
+Muba!
+Mubaa!!
+Mubaaaaa!!!!
+Mubaaaaaaaaaa👀
 `
   conn.sendFile(m.chat, pp, 'prefil.jpg', infobt, m, false, { mentions: [who] })
   m.react(done)
